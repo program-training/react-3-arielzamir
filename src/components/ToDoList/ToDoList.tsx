@@ -17,7 +17,7 @@ const UserTasks: React.FC<UserTasksProps> = ({ userId }) => {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        setTasks(data.slice(0, 5)); // Display the first 5 tasks
+        setTasks(data.slice(0, 5));
       } catch (error) {
         console.error("Error fetching tasks:", error);
       }
