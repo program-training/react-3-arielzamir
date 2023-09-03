@@ -1,11 +1,10 @@
-import "./App.css";
-import { Example } from "./components/Example/Example";
+import UsersFromServer from "./components/UsersFromServer/UsersFromServer";
 
-function App() {
+function App(): JSX.Element {
   return (
-    <>
-      <Example />{" "}
-    </>
+    <div>
+      <UsersFromServer />
+    </div>
   );
 }
 
